@@ -1,0 +1,7 @@
+.item {
+    transition: transform 0.3s; /* Add a smooth transition for the size change */
+  }
+  
+  .item:hover {
+    transform: scale(1.1); /* Increase the size by 10% (adjust as needed) */
+  }
