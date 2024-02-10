@@ -38,7 +38,8 @@ function Footer() {
               Projects<br></br>
               Competitive Coding<br></br>
               Experiences<br></br>
-              Blogs
+              Blogs<br></br>
+              <a href="SharvariSoparkarResume.pdf" download='resume.pdf' className="download-btn" style={{color:'inherit',textDecoration:'none'}}>Resume</a>
           </Item>
         </Grid>
       </Grid>

@@ -5,6 +5,7 @@ import { useSpring } from 'react-spring';
 import Footer from './Footer';
 import Myskills from './Myskills';
 import AboutMe from './AboutMe';
+import MyProjects from './MyProjects';
 import  '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/style/Aboutme.css';
 import '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/style/Myskills.css';
 import '../images/letter-c.png'
@@ -94,12 +95,13 @@ const LandingPage = () => {
                               </animated.div> */}
                               <div class="box-1">
                                 <div class="btn btn-one" onClick={scrollToAboutMe}>
-                                  <span>LETS MEET</span>
+                                  <span>Who am I ??</span>
+                                  </div>
                                 </div>
-                              </div>
-                            </animated.div>
+                       </animated.div>
               <div style={{ marginTop: '9rem' }}ref={(ref) => setAboutMeRef(ref)}><AboutMe/></div>
               <div><Myskills/></div>
+              <div><MyProjects/></div>
               <div ><Footer/></div>
             </div>
         </div> 
