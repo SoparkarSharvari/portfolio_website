@@ -45,21 +45,17 @@ function Footer() {
       </Grid>
     </Box>
     <br></br>
-    <div style={{ marginLeft:'600px'}}>
-        
-    <ButtonGroup variant="none" aria-label="Basic button group" >
+    <div style={{ background: 'black', height: '20px', width: '100%',}}>
+    <ButtonGroup variant="none" aria-label="Basic button group" style={{ position: 'absolute', color:'white',left: '40%' }}>
         <h4>Socials : </h4>
         <Button>{<GitHubIcon/>}</Button>
         <Button>{<LinkedInIcon/>}</Button>
         <Button>{<InstagramIcon/>}</Button>
         <Button>{<FacebookIcon/>}</Button>
-    </ButtonGroup>
-    </div>
-
-     <hr width='90%' />
+    </ButtonGroup></div><br></br>
+     <hr width='max-content'  />
     <div style={{ background: 'black', height: '100px', width: '100%',}}>
-       
-        <h6 style={{ position: 'absolute', left: '45%' }}>@2024 | All rights reserved</h6>
+        <h6 style={{ position: 'absolute', color:'white',left: '45%' ,marginTop:'30px'}}>@2024 | All rights reserved</h6>
       </div>
     </div>
 

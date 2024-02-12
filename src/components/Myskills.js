@@ -11,6 +11,7 @@ import sqllogo from '../images/sql-server.png'
 import html_css_js from '../images/klipartz.com.png'
 import reactjslogo from '../images/logo192.png'
 
+
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -29,12 +30,16 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
   
 function Myskills() {
+    const outerdivStyle ={
+        height: 'max-content',
+        background: 'linear-gradient(to bottom, rgba(130, 124, 203, 0.9), rgba(116, 107, 235, 0)' 
+    }
   return (
       <>
-        <div style={{ height: 'max-content' }}>
-            <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'black', fontSize: '50px', alignSelf: 'center' }}>
+
+<div style={outerdivStyle}>
+            <div><h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'black', fontSize: '50px', alignSelf: 'center' }}>
                 My Skills</h2>
-        
         <Box sx={{ flexGrow: 1 ,padding:'20px'}}>
         <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Languages</h2>
         <Grid container spacing={3} style={{paddingLeft:'3vh',paddingRight:'0vh'}}>
@@ -93,10 +98,10 @@ function Myskills() {
             <Item>SQL</Item><br></br><Item>StarUML</Item>
             </Grid>
             <Grid item xs={2}>
-            <Item>xs=8</Item><br></br>
+            <Item>Figma</Item><br></br>
             </Grid>
             <Grid item xs={2}>
-            <Item>xs=4</Item><br></br>
+            <Item>BotPress</Item><br></br>
             </Grid>
         </Grid>
         <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Version Control Tools</h2>
@@ -104,10 +109,9 @@ function Myskills() {
             <Grid item xs={2}>
             <Item >GitHub</Item>
             </Grid>
-            
         </Grid>
         </Box>
-        </div>
+        </div></div>
       </>
     
   )

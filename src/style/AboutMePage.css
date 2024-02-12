@@ -1,0 +1,60 @@
+
+  .m {
+    background: lighten(black, 10%);
+    width: '100%';
+    height: '100vh';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .wrapper {
+    position: relative;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 36px;
+    overflow: hidden;
+  }
+  
+  .c {
+    position: absolute;   
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .h1 {
+    font-size: 200%;
+    border-bottom: 1px fade(white, 60%) solid;
+  }
+  .top-content {
+    
+    --x: 50px;
+    --y: 50px;
+    
+    background: #E01A4F;
+    
+    mask-image: radial-gradient(circle 80vh at var(--x) var(--y), white 25%, transparent 25.2%);
+    
+    .h1 {
+      color: #0C090D;
+    }
+  
+  }
+  
+  .reveal-content {
+    
+    --x: 0px;
+    --y: 0px;
+    background: #040F16;
+    
+    h1 {
+      color: #F9C22E;
+    }
+    
+  
+  }
