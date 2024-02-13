@@ -5,6 +5,8 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
+import '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/images/BlogPostWebsite.png'
+
 import { itemData } from './projectData';
 
 const MyProjects = () => {
