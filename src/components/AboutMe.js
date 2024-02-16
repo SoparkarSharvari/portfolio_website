@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
 import AboutmeGirl from '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/AboutmeGirl.png'
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-
+import ContactMe from './ContactMe'
 function AboutMe() {
     const Item = styled(Paper)(({ theme }) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : 'white',
@@ -34,7 +34,7 @@ function AboutMe() {
                 <br></br>Here you can see some of my latest <span ><Link style={{ color: 'gray' ,textDecoration:'none'}} to="/myprojects">WORK.</Link></span>
 
                 <br></br><br></br>Feel free to snoop around on my <span ><a href="https://github.com/SoparkarSharvari" style={{ color: 'gray', textDecoration: 'none' }}target="_blank"rel="noopener noreferrer">GITHUB.</a></span>
-                <br></br>For inquiries or a how you doing <span style={{ color: 'gray' }}>CONTACT ME,</span>
+                <br></br>For inquiries or a how you doing <span style={{ color: 'gray' }}><ContactMe/></span>
                 <br></br>I am happy to hear from you
                 
                 <br></br><br></br>P.S. If this wasn't enough for you no worries!
