@@ -5,9 +5,9 @@ import Workflow1 from '../images/Workflow1.png'
 import painting from '../images/Being Creative 1.png'
 import reading from '../images/Reading A Book 3.png'
 import selfie from '../images/Selfie 2.png'
+import meditation from '../images/Meditation Yaga 1.png'
 import workHome from '../images/Remote Work 2.png'
 import coffee from '../images/Coffee Tea 4.png'
-import meditation from '../images/Meditation Yaga 1.png'
 import Header from './Header'
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
@@ -103,7 +103,7 @@ const AboutMePage = () => {
       
     </Box>
         </div>
-        <div class="m">
+        {/* <div class="m">
           <div class="wrapper">
               <div class="c reveal-content">
               <h1 class='h1'>FINALLY !!<br></br> WEBSITE IS DONE !</h1>
@@ -114,8 +114,8 @@ const AboutMePage = () => {
               </h1>
               <h1 class='h1'> ~ Developer ☕️</h1>
               </div>
-        </div>
-    </div>
+        </div> */}
+    {/* </div> */}
     <br></br>
     <div><Footer/></div>
     </div>

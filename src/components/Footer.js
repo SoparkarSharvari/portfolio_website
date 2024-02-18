@@ -10,7 +10,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-
+import { Link } from 'react-router-dom';
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : 'black',
   ...theme.typography.body2,
@@ -35,8 +35,8 @@ function Footer() {
         </Grid>
         <Grid item xs={3}>
           <Item>
-              Projects<br></br>
-              Competitive Coding<br></br>
+              <Link style={{ color: 'gray' ,textDecoration:'none'}} to="/myprojects">Projects</Link><br></br>
+              <a href="https://leetcode.com/SharvariSoparkar/" target='_blank' className="download-btn" style={{color:'inherit',textDecoration:'none'}} rel="noreferrer">Competitive Coding<br></br></a>
               Experiences<br></br>
               Blogs<br></br>
               <a href="SharvariSoparkarResume.pdf" download='resume.pdf' className="download-btn" style={{color:'inherit',textDecoration:'none'}}>Resume</a>
@@ -46,12 +46,12 @@ function Footer() {
     </Box>
     <br></br>
     <div style={{ background: 'black', height: '20px', width: '100%',}}>
-    <ButtonGroup variant="none" aria-label="Basic button group" style={{ position: 'absolute', color:'white',left: '40%' }}>
+    <ButtonGroup variant="none" aria-label="Basic button group" style={{ position: 'absolute', color:'white',left: '42%' }}>
         <h4>Socials : </h4>
-        <Button>{<GitHubIcon/>}</Button>
-        <Button>{<LinkedInIcon/>}</Button>
-        <Button>{<InstagramIcon/>}</Button>
-        <Button>{<FacebookIcon/>}</Button>
+        <Button href="https://github.com/SoparkarSharvari" target="_blank">{<GitHubIcon/>}</Button>
+        <Button href="https://www.linkedin.com/in/sharvari-soparkar-608198241/" target="_blank">{<LinkedInIcon/>}</Button>
+        <Button href="https://www.instagram.com/sharvari_soparkar/" target="_blank">{<InstagramIcon/>}</Button>
+        {/* <Button href="https://facebook.com" target="_blank">{<FacebookIcon/>}</Button> */}
     </ButtonGroup></div><br></br>
      <hr width='max-content'  />
     <div style={{ background: 'black', height: '100px', width: '100%',}}>

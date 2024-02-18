@@ -10,7 +10,17 @@ import nodejslogo from '../images/node-js.png'
 import sqllogo from '../images/sql-server.png'
 import html_css_js from '../images/klipartz.com.png'
 import reactjslogo from '../images/logo192.png'
-
+import MongoDB from '../images/MongoDB.jpg'
+import mysqlworkbench from '../images/mysqlworkbench.svg'
+import AN from '../images/AN.png'
+import StarUML from '../images/StarUML.jpg'
+import Figma from '../images/Figma Logo.png'
+import botpress from '../images/botpress.avif'
+import powerbi from '../images/PowerBI.svg'
+import weka from '../images/weka.png'
+import tableau from '../images/tableau.png'
+import github from '../images/github.png'
+import express from '../images/express.png'
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -32,16 +42,17 @@ const Item = styled(Paper)(({ theme }) => ({
 function Myskills() {
     const outerdivStyle ={
         height: 'max-content',
-        background: 'linear-gradient(to bottom, rgba(130, 124, 203, 0.9), rgba(116, 107, 235, 0)' 
-    }
+        background: 'white'}
   return (
       <>
 
 <div style={outerdivStyle}>
-            <div><h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'black', fontSize: '50px', alignSelf: 'center' }}>
-                My Skills</h2>
+            <div>
+                <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'black', fontSize: '50px', alignSelf: 'center' }}>
+                    My Skills</h2>
+                <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Languages</h2>
         <Box sx={{ flexGrow: 1 ,padding:'20px'}}>
-        <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Languages</h2>
+        
         <Grid container spacing={3} style={{paddingLeft:'3vh',paddingRight:'0vh'}}>
             <Grid item xs={2}>
             <Item >C 
@@ -50,7 +61,6 @@ function Myskills() {
             </Item>
             <br></br>
             <Item>Html,CSS <br></br>JavaScript<br></br>
-            
                 <img src={html_css_js} alt="SVG" width='50px'/></Item>
             </Grid>
             <Grid item xs={2}>
@@ -74,10 +84,12 @@ function Myskills() {
             <Grid item xs={2}>
             <Item>SQL
             <br></br><br></br>
-                <img src={sqllogo} alt="SVG" width='50px'/></Item><br></br><Item>EXPRESS.JS</Item>
+                <img src={sqllogo} alt="SVG" width='50px'/></Item>
+                <br></br>
+                <Item>EXPRESS.JS <br></br><br></br><img src={express} alt="SVG" width='50px'/></Item>
             </Grid>
             <Grid item xs={2}>
-            <Item>xs=8</Item><br></br><Item>xs=8</Item>
+            <Item>xs=8</Item>
             </Grid>
             <Grid item xs={2}>
             <Item>xs=4</Item>
@@ -86,28 +98,34 @@ function Myskills() {
         <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Softwares</h2>
         <Grid container spacing={3} style={{paddingLeft:'3vh',paddingRight:'0vh'}}>
             <Grid item xs={2}>
-            <Item >MongoDB <br></br>Compass</Item><br></br><Item>PowerBI</Item>
+                <Item>MongoDB Compass <br></br><br></br><img src={MongoDB} alt="SVG" height='48px'width='100px' /></Item>
+            <br></br>
+                <Item>PowerBI <br></br><br></br> <img src={powerbi} alt="SVG" height='50px'width='50px' /></Item>
             </Grid>
             <Grid item xs={2}>
-            <Item>MySQL <br></br> Workbench</Item><br></br><Item>Tableau</Item>
+                <Item>MySQL <br></br> Workbench<br></br><img src={mysqlworkbench} alt="SVG" height='48px'width='50px' /></Item>
+            <br></br>
+                <Item>Tableau <br></br><br></br><img src={tableau} alt="SVG" height='50px'width='50px' /></Item>
             </Grid>
             <Grid item xs={2}>
-            <Item>Anaconda<br></br> Navigator</Item> <br></br><Item>WEKA</Item>
+                <Item>Anaconda<br></br> Navigator <br></br><img src={AN} alt="SVG" height='48px'width='50px' /></Item> 
+            <br></br>
+                <Item>WEKA <br></br><br></br> <img src={weka} alt="SVG" height='50px'width='50px' /></Item>
             </Grid>
             <Grid item xs={2}>
-            <Item>SQL</Item><br></br><Item>StarUML</Item>
+                <Item>StarUML <br></br> <br></br><img src={StarUML} alt="SVG" height='58px'width='60px' /></Item>
             </Grid>
             <Grid item xs={2}>
-            <Item>Figma</Item><br></br>
+                <Item>Figma <br></br> <img src={Figma} alt="SVG" height='90px'width='80px' /></Item><br></br>
             </Grid>
             <Grid item xs={2}>
-            <Item>BotPress</Item><br></br>
+                <Item>BotPress <br></br><br></br> <img src={botpress} alt="SVG" height='50px'width='50px' /></Item><br></br>
             </Grid>
         </Grid>
         <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Version Control Tools</h2>
         <Grid container spacing={3} style={{paddingLeft:'3vh',paddingRight:'0vh'}}>
             <Grid item xs={2}>
-            <Item >GitHub</Item>
+            <Item >GitHub <br></br><br></br><img src={github} alt="SVG" height='50px'width='50px' /></Item>
             </Grid>
         </Grid>
         </Box>
