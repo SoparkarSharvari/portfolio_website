@@ -17,10 +17,11 @@ import Box from '@mui/material/Box';
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
-  padding: theme.spacing(1),
+  padding: theme.spacing(2),
   textAlign: 'center',
   color: theme.palette.text.secondary,
-  
+  boxShadow:'none',
+  borderRadius: '30%',
   // boxShadow:'none',
 }));
 
@@ -44,18 +45,17 @@ const AboutMePage = () => {
         };
       }, []); 
   return (
-    <div style={{backgroundColor:'#ffff'}}>
-      <Header/>
+    <div style={{backgroundColor:' #ebdef0 '}}>
         <div style={{padding:'60px'}}>
         <Box sx={{ width: '100%' }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={8}>
-        <Item>
-            {/* <img src={Workflow1} alt="" /> */}
-            <h2>NOT YOUR AVERAGE SOFTWARE ENGINEER</h2>
-            <h3> Blending the precision of a software engineer with the flair of a creative alchemist.</h3>
+     
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 5 }}>
+        <Grid item xs={12}>
+          <Item  style={{backgroundColor:' #ebdef0 '}}>
+            <h1> A creative alchemist.</h1>
           </Item>
         </Grid>
+        
         <Grid item xs={4}>
           <Item>
             <img src={Workflow1} alt="" height="250px"/>
@@ -65,7 +65,7 @@ const AboutMePage = () => {
         <Grid item xs={4}>
           <Item>
             <img src={painting} alt="" height="250px"/>
-            <h2>She found solace in the gentle strokes of a paintbrush.</h2>
+            <h2>She found peace in strokes of a paintbrush.</h2>
           </Item>
           
         </Grid>
@@ -87,12 +87,7 @@ const AboutMePage = () => {
             <h2> Home is a refuge for her soul.</h2>
           </Item>
         </Grid>
-        <Grid item xs={4}>
-          <Item>
-            <img src={meditation} alt="" height="250px"/>
-            <h2>She meditates and makes peace with everyone/thing</h2>
-          </Item>
-        </Grid>
+
         <Grid item xs={4}>
           <Item>
             <img src={coffee} alt="" height="250px" width='inherit'/>

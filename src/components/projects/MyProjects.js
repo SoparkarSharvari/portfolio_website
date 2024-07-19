@@ -8,10 +8,13 @@ import InfoIcon from '@mui/icons-material/Info';
 import BlogPostWebsiteImage from '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/images/BlogPostWebsite.png'
 
 import { itemData } from './projectData';
+import { Padding } from '@mui/icons-material';
 
 const MyProjects = () => {
   const textStyle ={
-    color:'black'
+    color:'black',
+    margin:'0px',
+    padding: '0.9%'
   }
   const backgroundStyle ={
     backgroundColor:'#FFC700',
@@ -32,7 +35,7 @@ const MyProjects = () => {
   return (
     <>
       <div class='body' style={backgroundStyle}>
-        <h1 style={textStyle}> Projects </h1>
+        <h1 style={textStyle}> PROJECTS </h1>
         
         <ListSubheader component="div">GLIMPSE OF PROJECTS I HAVE WORKED ON</ListSubheader>
         <div style={ImgDiv}>
@@ -61,6 +64,7 @@ const MyProjects = () => {
                 }
               />
             </ImageListItem>
+            
           ))}
         </ImageList>
         </div>

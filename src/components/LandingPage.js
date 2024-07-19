@@ -16,6 +16,7 @@ import '../images/node-js.png'
 import '../images/sql-server.png'
 import '../images/klipartz.com.png'
 import '../images/logo192.png'
+import { Maximize } from '@mui/icons-material';
 
 
 const LandingPage = () => {
@@ -23,7 +24,7 @@ const LandingPage = () => {
   const gradientStyle = {
     background: 'linear-gradient(to bottom, rgba(40, 60, 99, 1), rgba(255, 255, 255, 1))',
     backgroundSize: 'cover',
-    height: '88vh',
+    height: "100%",
     width: '100%',
     fontFamily: 'Protest Strike, sans-serif',
     color: 'white',
@@ -48,10 +49,11 @@ const LandingPage = () => {
       });
     
     const [showLanding, setShowLanding] = useState(true);
+
     const landingStyle={
         background: `url(${loading}) no-repeat center center fixed` ,
         backgroundSize: '20%',
-        height: '500px',
+        height: '500vh',
         display: showLanding ? 'block' : 'none',
     };
   
@@ -78,34 +80,30 @@ const LandingPage = () => {
     
   return (
     <>
-      <div style={landingStyle}>
-        
-      </div>
-        <div style={alternativeStyle}>
-            <div style={gradientStyle}>
-                            <animated.div style={{...headerAnimation, fontFamily: 'Protest Strike, sans-serif',marginTop:'25vh'}}>
-                                <h1 style={{ fontSize: '75px' }}>
-                                    Not Your<br />
-                                    Average<br />
-                                    Software <br />
-                                    Engineer<br />
-                                </h1>
-                              {/* <animated.div style={buttonAnimation }>
-                                  <Button variant="outlined" style={buttonStyle}>Primary</Button>
-                              </animated.div> */}
-                              <br></br>
-                              <div class="box-1" style={{marginLeft:'75vh'}}> 
-                                <div class="btn btn-one" onClick={scrollToAboutMe}>
-                                  <span>Who am I ??</span>
-                                  </div>
-                                </div>
-                       </animated.div>
-              <div style={{ marginTop: '6rem' }}ref={(ref) => setAboutMeRef(ref)}><AboutMe/></div>
-              <div><Myskills/></div>
-              {/* <div><MyProjects/></div> */}
-              <div ><Footer/></div>
-            </div>
-        </div> 
+      <div style={landingStyle}></div>
+      
+      <div style={alternativeStyle}>
+          <div style={gradientStyle}>
+            <animated.div style={{...headerAnimation, fontFamily: 'Protest Strike, sans-serif',marginTop:'25vh'}}>
+              <h1 style={{ fontSize: '75px' }}>
+                  Not Your<br />
+                  Average<br />
+                  Software <br />
+                  Engineer<br />
+              </h1>
+                    
+              </animated.div>
+              <br></br>
+              
+                <div class="btn btn-one" onClick={scrollToAboutMe}  >
+                  <span>Who am I ??</span>
+                </div>
+            <div style={{ marginTop: '6rem' }}ref={(ref) => setAboutMeRef(ref)}><AboutMe/></div>
+            <div><Myskills/></div>
+            {/* <div><MyProjects/></div> */}
+            <div ><Footer/></div>
+          </div>
+      </div> 
         
     </>
   )

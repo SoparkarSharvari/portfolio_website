@@ -11,14 +11,9 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
-
-
 const Headerfile = () => {
     const [state, setState] = React.useState({
         top: false,
-        left: false,
-        bottom: false,
-        right: false,
       });
     
       const toggleDrawer = (anchor, open) => (event) => {
@@ -37,7 +32,7 @@ const Headerfile = () => {
           onKeyDown={toggleDrawer(anchor, false)}
         >
           <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+            {['Home', 'Projects', 'About me', 'Contact me'].map((text, index) => (
               <ListItem key={text} disablePadding>
                 <ListItemButton>
                   <ListItemIcon>
@@ -48,27 +43,15 @@ const Headerfile = () => {
               </ListItem>
             ))}
           </List>
-          <Divider />
-          <List>
-            {['All mail', 'Trash', 'Spam'].map((text, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
+          <Divider></Divider>
         </Box>
       );
     return (
         <header style={{ background: 'rgba(213, 217, 225, 1)', height:'50px'}}>
-            <div className="RightDrawer" style={{padding:'0px'}}>
-                {['right'].map((anchor) => (
+            <div className="Drawer" style={{paddingRight:'95%'}}>
+                {['left'].map((anchor) => (
                     <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+                    <Button onClick={toggleDrawer(anchor, true)}>NAVIGATE</Button>
                     <Drawer
                         anchor={anchor}
                         open={state[anchor]}

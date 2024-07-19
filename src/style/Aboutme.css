@@ -11,29 +11,22 @@ div[class*=box] {
     align-items: center;
   }
   
-  .box-1 { background-color: #99b8cc; }
-  
-  .btn {
-    color: 'white';
-    justify-content: 'center';
-    align-items: 'center';
-    position: 'absolute';    
-    line-height: 50px;
-    height: 50px;
-    text-align: center;
-    width: 250px;
-    cursor: pointer;
-  }
-  
   /* 
   ========================
         BUTTON ONE
   ========================
   */
   .btn-one {
+    margin-left: 75vh;
     color: #FFF;
     transition: all 0.3s;
     position: relative;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    background-color: #99b8cc;
   }
   
   .btn-one span {
@@ -42,8 +35,7 @@ div[class*=box] {
   
   .btn-one::before {
     
-    content: '';
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;

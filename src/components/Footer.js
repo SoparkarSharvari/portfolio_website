@@ -10,7 +10,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import ContactMe from './ContactMe';
+import AboutMe from './AboutMe';
 import { Link } from 'react-router-dom';
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : 'black',
   ...theme.typography.body2,
@@ -21,7 +24,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function Footer() {
-  
   return (
     <>
     <div style={{background:'black',height:'max-content', width:'100%'}}>
@@ -29,8 +31,8 @@ function Footer() {
       <Grid container spacing={1}>
         <Grid item xs={3}>
           <Item>
-              All about me <br></br>
-              Contact
+              <span ><Link style={{ color: 'gray' ,textDecoration:'none'}} to="/About_Sharvari_Soparkar">About me</Link></span> <br></br>
+              <span ><a style={{ color: 'gray' ,textDecoration:'none'}} href="mailto:shravaisoparkar@gmail.com" target="_blank" rel="noopener noreferrer">Contact me</a></span>
           </Item>
         </Grid>
         <Grid item xs={3}>
