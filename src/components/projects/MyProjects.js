@@ -5,23 +5,27 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
-import BlogPostWebsiteImage from '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/images/BlogPostWebsite.png'
-
+import Footer from '../Footer';
+import Bnt from '../BackButton'
 import { itemData } from './projectData';
-import { Padding } from '@mui/icons-material';
+
 
 const MyProjects = () => {
   const textStyle ={
     color:'black',
     margin:'0px',
-    padding: '0.9%'
+    padding: '0.9%',
+    fontSize: '2rem',
+    fontFamily: 'Protest Strike, sans-serif',
   }
   const backgroundStyle ={
     backgroundColor:'#FFC700',
-    height: 'max-content',
+    height: '100%',
+    alignItems: 'center', // Center horizontally
+    justifyContent: 'center', // Center vertically
+    minHeight: '100vh', 
   }
   const ImgDiv ={
-    margin:'20px',
     display:'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -31,11 +35,17 @@ const MyProjects = () => {
     width: '150vh',
     
   };
- 
+  const handleClick = (link) => {
+    window.open(link, '_blank');
+  };
   return (
     <>
       <div class='body' style={backgroundStyle}>
-        <h1 style={textStyle}> PROJECTS </h1>
+      <div style={{ display: 'flex', padding: '5px', width: '55%', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Bnt />
+          <h1 style={textStyle}>PROJECTS</h1>
+        </div>
+       
         
         <ListSubheader component="div">GLIMPSE OF PROJECTS I HAVE WORKED ON</ListSubheader>
         <div style={ImgDiv}>
@@ -56,8 +66,10 @@ const MyProjects = () => {
                 subtitle={item.author}
                 actionIcon={
                   <IconButton
+                    
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`}
+                    onClick={() => handleClick(item.link)}
                   >
                     <InfoIcon />
                   </IconButton>
@@ -69,6 +81,7 @@ const MyProjects = () => {
         </ImageList>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

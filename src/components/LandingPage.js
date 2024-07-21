@@ -98,9 +98,8 @@ const LandingPage = () => {
                 <div class="btn btn-one" onClick={scrollToAboutMe}  >
                   <span>Who am I ??</span>
                 </div>
-            <div style={{ marginTop: '6rem' }}ref={(ref) => setAboutMeRef(ref)}><AboutMe/></div>
+            <div style={{ marginTop :'6rem' }}ref={(ref) => setAboutMeRef(ref)}><AboutMe/></div>
             <div><Myskills/></div>
-            {/* <div><MyProjects/></div> */}
             <div ><Footer/></div>
           </div>
       </div> 

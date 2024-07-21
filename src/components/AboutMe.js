@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import AboutmeGirl from '../AboutmeGirl.png'
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import ContactMe from './ContactMe'
-
+import Navbar from './Navbar';
 function AboutMe() {
     const Item = styled(Paper)(({ theme }) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : 'rgba(255, 255, 255, 0)',
@@ -43,6 +43,7 @@ function AboutMe() {
             </Item>
         </Grid>
       </Grid>
+      <Navbar/>
     </Box>
     <a href="SharvariSoparkarResume.pdf" download='resume.pdf' className="download-btn" 
     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: ' #ebdef0', fontSize: '30px', alignSelf: 'center' 

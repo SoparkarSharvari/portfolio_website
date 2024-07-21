@@ -13,6 +13,7 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import BackButton from './BackButton';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -45,14 +46,20 @@ const AboutMePage = () => {
         };
       }, []); 
   return (
+    <>
+  
     <div style={{backgroundColor:' #ebdef0 '}}>
-        <div style={{padding:'60px'}}>
+      
+        <div style={{paddingLeft:'60px',paddingRight:'60px'}}>
         <Box sx={{ width: '100%' }}>
      
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 5 }}>
         <Grid item xs={12}>
-          <Item  style={{backgroundColor:' #ebdef0 '}}>
+          <Item  style={{backgroundColor:' #ebdef0 ',display:'flex', margin:'0px'}}>
+            <div style={{ display: 'flex', padding: '5px', width: '60%', justifyContent: 'space-between', alignItems: 'center' }}>
+            <BackButton/> 
             <h1> A creative alchemist.</h1>
+          </div>
           </Item>
         </Grid>
         
@@ -114,6 +121,7 @@ const AboutMePage = () => {
     <br></br>
     <div><Footer/></div>
     </div>
+    </>
   )
 }
 

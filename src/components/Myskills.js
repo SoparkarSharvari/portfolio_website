@@ -51,7 +51,7 @@ function Myskills() {
                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'black', fontSize: '50px', alignSelf: 'center' }}>
                     My Skills</h2>
                 <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Languages</h2>
-        <Box sx={{ flexGrow: 1 ,padding:'20px'}}>
+        <Box sx={{ flexGrow: 1 ,paddingLeft:'80px',paddingRight:'80px',paddingBottom:'30px'}}>
         
         <Grid container spacing={3} style={{paddingLeft:'3vh',paddingRight:'0vh'}}>
             <Grid item xs={2}>
@@ -129,6 +129,7 @@ function Myskills() {
             </Grid>
         </Grid>
         </Box>
+       
         </div></div>
       </>
     

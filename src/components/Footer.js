@@ -57,7 +57,8 @@ function Footer() {
     </ButtonGroup></div><br></br>
      <hr width='max-content'  />
     <div style={{ background: 'black', height: '100px', width: '100%',}}>
-        <h6 style={{ position: 'absolute', color:'white',left: '45%' ,marginTop:'30px'}}>@2024 | All rights reserved</h6>
+        <h6 style={{ position: 'absolute', color:'white',left: '45%' ,marginTop:'30px'}}>@2024 | All rights reserved <p style={{color:'white'}}>Last Updated July 2024</p></h6>
+        
       </div>
     </div>
 
