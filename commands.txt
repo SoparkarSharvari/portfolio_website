@@ -1,0 +1,3 @@
+npx nodemon app.js
+export NODE_OPTIONS=--openssl-legacy-provider
+npm start

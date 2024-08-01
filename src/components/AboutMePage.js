@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react';
 import Footer from './Footer';
-import '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/style/AboutMePage.css'
+import '../style/AboutMePage.css'
 import Workflow1 from '../images/Workflow1.png'
 import painting from '../images/Being Creative 1.png'
 import reading from '../images/Reading A Book 3.png'
 import selfie from '../images/Selfie 2.png'
-import meditation from '../images/Meditation Yaga 1.png'
 import workHome from '../images/Remote Work 2.png'
 import coffee from '../images/Coffee Tea 4.png'
-import Header from './Header'
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';

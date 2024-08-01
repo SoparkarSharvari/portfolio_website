@@ -1,13 +1,13 @@
 import React ,{ useState, useEffect } from 'react'
-import loading from '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/loadingPng.gif'
+import loading from '../loadingPng.gif'
 import { animated } from 'react-spring';
 import { useSpring } from 'react-spring';
 import Footer from './Footer';
 import Myskills from './Myskills';
 import AboutMe from './AboutMe';
 import MyProjects from './projects/MyProjects';
-import  '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/style/Aboutme.css';
-import '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/style/Myskills.css';
+import  '../style/Aboutme.css';
+import '../style/Myskills.css';
 import '../images/letter-c.png'
 import '../images/python.png'
 import '../images/java-script.png'

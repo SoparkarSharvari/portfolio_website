@@ -1,6 +1,5 @@
 import BlogPostWebsiteImage from '../../images/BlogPostWebsite.png'
 import Agriivision from '../../images/agriivision.png'
-import BPW from '/Users/sharvarisoparkar/Desktop/PortfolioWebsite/portfolio_website/src/images/BPW.jpeg'
 import itsBookishh from '../../images/Its_Bookishhh.png'
 import expenseTracker from '../../images/expensetracker.png'
 import calculator from '../../images/calculator.png'
