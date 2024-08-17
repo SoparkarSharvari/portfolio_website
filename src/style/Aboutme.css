@@ -17,7 +17,7 @@ div[class*=box] {
   ========================
   */
   .btn-one {
-    margin-left: 75vh;
+    margin-left: 380px;
     color: #FFF;
     transition: all 0.3s;
     position: relative;

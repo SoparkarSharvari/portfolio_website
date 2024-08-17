@@ -22,9 +22,9 @@ import { Maximize } from '@mui/icons-material';
 const LandingPage = () => {
 
   const gradientStyle = {
-    background: 'linear-gradient(to bottom, rgba(40, 60, 99, 1), rgba(255, 255, 255, 1))',
-    backgroundSize: 'cover',
-    height: "100%",
+    background: 'linear-gradient(to bottom, rgba(40, 60, 99, 1), rgba(255, 255, 255, 0))',
+    // backgroundSize: '',
+    height: '100%',
     width: '100%',
     fontFamily: 'Protest Strike, sans-serif',
     color: 'white',
@@ -84,20 +84,17 @@ const LandingPage = () => {
       
       <div style={alternativeStyle}>
           <div style={gradientStyle}>
-            <animated.div style={{...headerAnimation, fontFamily: 'Protest Strike, sans-serif',marginTop:'25vh'}}>
+            <animated.div style={{...headerAnimation, fontFamily: 'Protest Strike, sans-serif',margin:'25vh'}}>
               <h1 style={{ fontSize: '75px' }}>
                   Not Your<br />
                   Average<br />
                   Software <br />
                   Engineer<br />
               </h1>
-                    
-              </animated.div>
-              <br></br>
-              
-                <div class="btn btn-one" onClick={scrollToAboutMe}  >
-                  <span>Who am I ??</span>
-                </div>
+              <div class="btn btn-one" onClick={scrollToAboutMe}  >
+                    <span>Who am I ??</span>
+              </div>
+            </animated.div>
             <div style={{ marginTop :'6rem' }}ref={(ref) => setAboutMeRef(ref)}><AboutMe/></div>
             <div><Myskills/></div>
             <div ><Footer/></div>
