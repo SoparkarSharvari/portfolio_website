@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
-import AboutmeGirl from '../AboutmeGirl.png'
+import AboutmeGirl from '../AboutmeGirl.png';
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-import ContactMe from './ContactMe'
+import ContactMe from './ContactMe';
 import Navbar from './Navbar';
 function AboutMe() {
     const Item = styled(Paper)(({ theme }) => ({

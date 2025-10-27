@@ -1,22 +1,10 @@
-import React ,{ useState, useEffect } from 'react'
-import loading from '../loadingPng.gif'
-import { animated } from 'react-spring';
-import { useSpring } from 'react-spring';
+import React, { useState, useEffect } from 'react';
+import { animated, useSpring } from 'react-spring';
 import Footer from './Footer';
 import Myskills from './Myskills';
 import AboutMe from './AboutMe';
-import MyProjects from './projects/MyProjects';
-import  '../style/Aboutme.css';
-import '../style/Myskills.css';
-import '../images/letter-c.png'
-import '../images/python.png'
-import '../images/java-script.png'
-import '../images/java.png'
-import '../images/node-js.png'
-import '../images/sql-server.png'
-import '../images/klipartz.com.png'
-import '../images/logo192.png'
-import { Maximize } from '@mui/icons-material';
+import '../style/Aboutme.css';
+import loading from '../loadingPng.gif';
 
 
 const LandingPage = () => {

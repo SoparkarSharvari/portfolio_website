@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -10,8 +10,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import ContactMe from './ContactMe';
-import AboutMe from './AboutMe';
 import { Link } from 'react-router-dom';
 
 const Item = styled(Paper)(({ theme }) => ({

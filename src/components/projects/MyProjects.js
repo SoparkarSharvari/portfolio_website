@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -6,7 +6,7 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import Footer from '../Footer';
-import Bnt from '../BackButton'
+import BackButton from '../BackButton';
 import { itemData } from './projectData';
 
 
@@ -42,7 +42,7 @@ const MyProjects = () => {
     <>
       <div class='body' style={backgroundStyle}>
       <div style={{ display: 'flex', padding: '5px', width: '55%', justifyContent: 'space-between', alignItems: 'center' }}>
-          <Bnt />
+          <BackButton />
           <h1 style={textStyle}>PROJECTS</h1>
         </div>
        
@@ -86,4 +86,4 @@ const MyProjects = () => {
   )
 }
 
-export default MyProjects
+export default MyProjects;

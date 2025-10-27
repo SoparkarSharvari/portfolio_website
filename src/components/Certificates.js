@@ -1,11 +1,11 @@
-import React from 'react'
-import BackButton from './BackButton'
+import React from 'react';
+import BackButton from './BackButton';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
-import Footer from './Footer'
-import logo from '../PostmanAPIFundamentalsStudentExpert.png'
+import Footer from './Footer';
+import logo from '../PostmanAPIFundamentalsStudentExpert.png';
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -110,4 +110,4 @@ function Certificates() {
   )
 }
 
-export default Certificates
+export default Certificates;

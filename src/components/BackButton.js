@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button } from '@mui/material';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 
 export default function BackButton() {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/'); // Navigate to the home route
+    navigate('/');
   };
 
   return (

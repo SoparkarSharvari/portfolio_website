@@ -1,8 +1,8 @@
 import React from 'react';
 import Footer from './Footer';
 import BackButton from './BackButton';
-import logo from '../images/AICTE-Logo.webp'
-import logo1 from '../images/codSoft.png'
+import logo from '../images/AICTE-Logo.webp';
+import logo1 from '../images/codSoft.png';
 function Experience() {
   const backgroundStyle ={
     backgroundColor:'#aed6f1',

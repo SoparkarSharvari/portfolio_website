@@ -1,9 +1,9 @@
-import BlogPostWebsiteImage from '../../images/BlogPostWebsite.png'
-import Agriivision from '../../images/agriivision.png'
-import itsBookishh from '../../images/Its_Bookishhh.png'
-import expenseTracker from '../../images/expensetracker.png'
-import calculator from '../../images/calculator.png'
-import Efacteur from'../../images/Efacteur.png';
+import BlogPostWebsiteImage from '../../images/BlogPostWebsite.png';
+import Agriivision from '../../images/agriivision.png';
+import itsBookishh from '../../images/Its_Bookishhh.png';
+import expenseTracker from '../../images/expensetracker.png';
+import calculator from '../../images/calculator.png';
+import Efacteur from '../../images/Efacteur.png';
 export const  itemData = [
     {
       img: BlogPostWebsiteImage,

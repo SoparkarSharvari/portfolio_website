@@ -1,26 +1,26 @@
-import React from 'react'
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Clogo from '../images/letter-c.png';
-import pylogo from '../images/python.png'
-import javalogo from'../images/java.png'
-import nodejslogo from '../images/node-js.png'
-import sqllogo from '../images/sql-server.png'
-import html_css_js from '../images/klipartz.com.png'
-import reactjslogo from '../images/logo192.png'
-import MongoDB from '../images/MongoDB.jpg'
-import mysqlworkbench from '../images/mysqlworkbench.svg'
-import AN from '../images/AN.png'
-import StarUML from '../images/StarUML.jpg'
-import Figma from '../images/Figma Logo.png'
-import botpress from '../images/botpress.avif'
-import powerbi from '../images/PowerBI.svg'
-import weka from '../images/weka.png'
-import tableau from '../images/tableau.png'
-import github from '../images/github.png'
-import express from '../images/express.png'
+import pylogo from '../images/python.png';
+import javalogo from '../images/java.png';
+import nodejslogo from '../images/node-js.png';
+import sqllogo from '../images/sql-server.png';
+import html_css_js from '../images/klipartz.com.png';
+import reactjslogo from '../images/logo192.png';
+import MongoDB from '../images/MongoDB.jpg';
+import mysqlworkbench from '../images/mysqlworkbench.svg';
+import AN from '../images/AN.png';
+import StarUML from '../images/StarUML.jpg';
+import Figma from '../images/Figma Logo.png';
+import botpress from '../images/botpress.avif';
+import powerbi from '../images/PowerBI.svg';
+import weka from '../images/weka.png';
+import tableau from '../images/tableau.png';
+import github from '../images/github.png';
+import express from '../images/express.png';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -88,12 +88,7 @@ function Myskills() {
                 <br></br>
                 <Item>EXPRESS.JS <br></br><br></br><img src={express} alt="SVG" width='50px'/></Item>
             </Grid>
-            <Grid item xs={2}>
-            <Item>xs=8</Item>
-            </Grid>
-            <Grid item xs={2}>
-            <Item>xs=4</Item>
-            </Grid>
+
         </Grid>
         <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Softwares</h2>
         <Grid container spacing={3} style={{paddingLeft:'3vh',paddingRight:'0vh'}}>
