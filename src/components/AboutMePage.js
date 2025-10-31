@@ -47,8 +47,7 @@ const AboutMePage = () => {
     <>
   
     <div style={{backgroundColor:' #ebdef0 '}}>
-      
-        <div style={{paddingLeft:'60px',paddingRight:'60px'}}>
+        <Box sx={{ paddingX: { xs: 2, sm: 4, md: 6 } }}>
         <Box sx={{ width: '100%' }}>
      
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 5 }}>
@@ -102,7 +101,7 @@ const AboutMePage = () => {
       </Grid>
       
     </Box>
-        </div>
+        </Box>
         {/* <div class="m">
           <div class="wrapper">
               <div class="c reveal-content">

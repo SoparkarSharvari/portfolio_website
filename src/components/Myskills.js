@@ -48,79 +48,79 @@ function Myskills() {
 
 <div style={outerdivStyle}>
             <div>
-                <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'black', fontSize: '50px', alignSelf: 'center' }}>
+                <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'black', fontSize: 'clamp(2rem, 5vw, 3rem)', alignSelf: 'center' }}>
                     My Skills</h2>
-                <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Languages</h2>
-        <Box sx={{ flexGrow: 1 ,paddingLeft:'80px',paddingRight:'80px',paddingBottom:'30px'}}>
-        
-        <Grid container spacing={3} style={{paddingLeft:'3vh',paddingRight:'0vh'}}>
-            <Grid item xs={2}>
-            <Item >C 
+                <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px', textAlign: 'center'}}>Languages</h2>
+        <Box sx={{ flexGrow: 1 ,paddingX:{xs: 2, sm: 4, md: 6}, paddingBottom:'30px'}}>
+
+        <Grid container spacing={2} justifyContent="center">
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+            <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>C
                 <br></br><br></br>
-                <img src={Clogo} alt="SVG" width='50px'/>
+                <img src={Clogo} alt="SVG" style={{ width: 'clamp(30px, 6vw, 50px)', height: 'auto' }}/>
             </Item>
             <br></br>
-            <Item>Html,CSS <br></br>JavaScript<br></br>
-                <img src={html_css_js} alt="SVG" width='50px'/></Item>
+            <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>Html,CSS <br></br>JavaScript<br></br>
+                <img src={html_css_js} alt="SVG" style={{ width: 'clamp(30px, 6vw, 50px)', height: 'auto' }}/></Item>
             </Grid>
-            <Grid item xs={2}>
-            <Item>PYTHON/PYTHON3
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+            <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>PYTHON/PYTHON3
                 <br></br><br></br>
-                <img src={pylogo} alt="SVG" width='50px'/></Item>
+                <img src={pylogo} alt="SVG" style={{ width: 'clamp(30px, 6vw, 50px)', height: 'auto' }}/></Item>
                 <br></br>
-            <Item>REACT.JS <br></br><br></br>
-                <img src={reactjslogo} alt="SVG" width='50px'/></Item>
+            <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>REACT.JS <br></br><br></br>
+                <img src={reactjslogo} alt="SVG" style={{ width: 'clamp(30px, 6vw, 50px)', height: 'auto' }}/></Item>
             </Grid>
-            <Grid item xs={2}>
-            <Item>JAVA
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+            <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>JAVA
                 <br></br><br></br>
-                <img src={javalogo} alt="SVG" width='50px'/></Item>
+                <img src={javalogo} alt="SVG" style={{ width: 'clamp(30px, 6vw, 50px)', height: 'auto' }}/></Item>
                 <br></br>
-            <Item>NODE.JS
+            <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>NODE.JS
                 <br></br><br></br>
-                <img src={nodejslogo} alt="SVG" width='50px'/>
+                <img src={nodejslogo} alt="SVG" style={{ width: 'clamp(30px, 6vw, 50px)', height: 'auto' }}/>
             </Item>
             </Grid>
-            <Grid item xs={2}>
-            <Item>SQL
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+            <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>SQL
             <br></br><br></br>
-                <img src={sqllogo} alt="SVG" width='50px'/></Item>
+                <img src={sqllogo} alt="SVG" style={{ width: 'clamp(30px, 6vw, 50px)', height: 'auto' }}/></Item>
                 <br></br>
-                <Item>EXPRESS.JS <br></br><br></br><img src={express} alt="SVG" width='50px'/></Item>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>EXPRESS.JS <br></br><br></br><img src={express} alt="SVG" style={{ width: 'clamp(30px, 6vw, 50px)', height: 'auto' }}/></Item>
             </Grid>
 
         </Grid>
-        <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Softwares</h2>
-        <Grid container spacing={3} style={{paddingLeft:'3vh',paddingRight:'0vh'}}>
-            <Grid item xs={2}>
-                <Item>MongoDB Compass <br></br><br></br><img src={MongoDB} alt="SVG" height='48px'width='100px' /></Item>
+        <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px', textAlign: 'center'}}>Softwares</h2>
+        <Grid container spacing={2} justifyContent="center">
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>MongoDB Compass <br></br><br></br><img src={MongoDB} alt="SVG" style={{ height: 'clamp(30px, 6vw, 48px)', width: 'clamp(60px, 12vw, 100px)' }} /></Item>
             <br></br>
-                <Item>PowerBI <br></br><br></br> <img src={powerbi} alt="SVG" height='50px'width='50px' /></Item>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>PowerBI <br></br><br></br> <img src={powerbi} alt="SVG" style={{ height: 'clamp(30px, 6vw, 50px)', width: 'clamp(30px, 6vw, 50px)' }} /></Item>
             </Grid>
-            <Grid item xs={2}>
-                <Item>MySQL <br></br> Workbench<br></br><img src={mysqlworkbench} alt="SVG" height='48px'width='50px' /></Item>
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>MySQL <br></br> Workbench<br></br><img src={mysqlworkbench} alt="SVG" style={{ height: 'clamp(30px, 6vw, 48px)', width: 'clamp(30px, 6vw, 50px)' }} /></Item>
             <br></br>
-                <Item>Tableau <br></br><br></br><img src={tableau} alt="SVG" height='50px'width='50px' /></Item>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>Tableau <br></br><br></br><img src={tableau} alt="SVG" style={{ height: 'clamp(30px, 6vw, 50px)', width: 'clamp(30px, 6vw, 50px)' }} /></Item>
             </Grid>
-            <Grid item xs={2}>
-                <Item>Anaconda<br></br> Navigator <br></br><img src={AN} alt="SVG" height='48px'width='50px' /></Item> 
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>Anaconda<br></br> Navigator <br></br><img src={AN} alt="SVG" style={{ height: 'clamp(30px, 6vw, 48px)', width: 'clamp(30px, 6vw, 50px)' }} /></Item>
             <br></br>
-                <Item>WEKA <br></br><br></br> <img src={weka} alt="SVG" height='50px'width='50px' /></Item>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>WEKA <br></br><br></br> <img src={weka} alt="SVG" style={{ height: 'clamp(30px, 6vw, 50px)', width: 'clamp(30px, 6vw, 50px)' }} /></Item>
             </Grid>
-            <Grid item xs={2}>
-                <Item>StarUML <br></br> <br></br><img src={StarUML} alt="SVG" height='58px'width='60px' /></Item>
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>StarUML <br></br> <br></br><img src={StarUML} alt="SVG" style={{ height: 'clamp(36px, 7vw, 58px)', width: 'clamp(36px, 7vw, 60px)' }} /></Item>
             </Grid>
-            <Grid item xs={2}>
-                <Item>Figma <br></br> <img src={Figma} alt="SVG" height='90px'width='80px' /></Item><br></br>
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>Figma <br></br> <img src={Figma} alt="SVG" style={{ height: 'clamp(54px, 11vw, 90px)', width: 'clamp(48px, 10vw, 80px)' }} /></Item><br></br>
             </Grid>
-            <Grid item xs={2}>
-                <Item>BotPress <br></br><br></br> <img src={botpress} alt="SVG" height='50px'width='50px' /></Item><br></br>
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+                <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>BotPress <br></br><br></br> <img src={botpress} alt="SVG" style={{ height: 'clamp(30px, 6vw, 50px)', width: 'clamp(30px, 6vw, 50px)' }} /></Item><br></br>
             </Grid>
         </Grid>
-        <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px'}}>Version Control Tools</h2>
-        <Grid container spacing={3} style={{paddingLeft:'3vh',paddingRight:'0vh'}}>
-            <Grid item xs={2}>
-            <Item >GitHub <br></br><br></br><img src={github} alt="SVG" height='50px'width='50px' /></Item>
+        <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px', textAlign: 'center'}}>Version Control Tools</h2>
+        <Grid container spacing={2} justifyContent="center">
+            <Grid item xs={6} sm={4} md={3} lg={2}>
+            <Item style={{ height: 'clamp(80px, 15vw, 100px)', width: 'clamp(120px, 20vw, 160px)' }}>GitHub <br></br><br></br><img src={github} alt="SVG" style={{ height: 'clamp(30px, 6vw, 50px)', width: 'clamp(30px, 6vw, 50px)' }} /></Item>
             </Grid>
         </Grid>
         </Box>

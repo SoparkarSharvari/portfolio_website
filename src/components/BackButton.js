@@ -12,7 +12,7 @@ export default function BackButton() {
   return (
     <Button 
       variant="outlined" 
-      style={{ paddingInline: '0px' }} 
+      style={{ paddingInline: '0px',marginTop: '10px' }} 
       onClick={handleClick} // Add onClick handler
     >
       HOME

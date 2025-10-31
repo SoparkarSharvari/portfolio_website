@@ -5,6 +5,7 @@ import Myskills from './Myskills';
 import AboutMe from './AboutMe';
 import '../style/Aboutme.css';
 import loading from '../loadingPng.gif';
+import { Box } from '@mui/material';
 
 
 const LandingPage = () => {
@@ -29,12 +30,12 @@ const LandingPage = () => {
         config: { duration: 2000 },
       });
     
-      const buttonAnimation = useSpring({
-        opacity: 1,
-        from: { opacity: 0 },
-        delay: 1500, // Delay the button animation
-        config: { duration: 1000 }, // Adjust the duration as needed
-      });
+      // const buttonAnimation = useSpring({
+      //   opacity: 1,
+      //   from: { opacity: 0 },
+      //   delay: 1500, // Delay the button animation
+      //   config: { duration: 1000 }, // Adjust the duration as needed
+      // });
     
     const [showLanding, setShowLanding] = useState(true);
 
@@ -55,7 +56,7 @@ const LandingPage = () => {
       const alternativeStyle = {
         // Add styles for the alternative content here
         display: showLanding ? 'none' : 'block',
-        height:'100vh',
+        height:'100%',
         width: '100%',
       };
       const [aboutMeRef, setAboutMeRef] = useState(null);
@@ -71,23 +72,28 @@ const LandingPage = () => {
       <div style={landingStyle}></div>
       
       <div style={alternativeStyle}>
+          <Box>
           <div style={gradientStyle}>
-            <animated.div style={{...headerAnimation, fontFamily: 'Protest Strike, sans-serif',margin:'25vh'}}>
-              <h1 style={{ fontSize: '75px' }}>
+            <animated.div style={{...headerAnimation, fontFamily: 'Protest Strike, sans-serif', margin: '10vh 5vw',height: '100%'}}>
+              <h1 style={{
+                fontSize: 'clamp(2rem, 8vw, 5rem)',
+                textAlign: 'center'
+              }}>
                   Not Your<br />
                   Average<br />
                   Software <br />
                   Engineer<br />
               </h1>
-              <div class="btn btn-one" onClick={scrollToAboutMe}  >
+              <div class="btn btn-one" onClick={scrollToAboutMe} style={{ margin: '2rem auto', display: 'block' }}>
                     <span>Who am I ??</span>
               </div>
             </animated.div>
-            <div style={{ marginTop :'6rem' }}ref={(ref) => setAboutMeRef(ref)}><AboutMe/></div>
+            <div ref={(ref) => setAboutMeRef(ref)}><AboutMe/></div>
             <div><Myskills/></div>
             <div ><Footer/></div>
           </div>
-      </div> 
+          </Box>
+      </div>
         
     </>
   )

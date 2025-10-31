@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -6,34 +6,39 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import Footer from '../Footer';
-import BackButton from '../BackButton';
+import PageHeader from '../PageHeader';
 import { itemData } from './projectData';
 
 
 const MyProjects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const textStyle ={
     color:'black',
     margin:'0px',
     padding: '0.9%',
-    fontSize: '2rem',
+    fontSize: 'clamp(1.5rem, 4vw, 2rem)',
     fontFamily: 'Protest Strike, sans-serif',
+    textAlign: 'center'
   }
   const backgroundStyle ={
     backgroundColor:'#FFC700',
     height: '100%',
     alignItems: 'center', // Center horizontally
     justifyContent: 'center', // Center vertically
-    minHeight: '100vh', 
+    minHeight: '100vh',
   }
   const ImgDiv ={
     display:'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    
+
   }
   const imageListStyle = {
-    width: '150vh',
-    
+    width: 'clamp(80vw, 150vh, 90vw)',
+
   };
   const handleClick = (link) => {
     window.open(link, '_blank');
@@ -41,10 +46,7 @@ const MyProjects = () => {
   return (
     <>
       <div class='body' style={backgroundStyle}>
-      <div style={{ display: 'flex', padding: '5px', width: '55%', justifyContent: 'space-between', alignItems: 'center' }}>
-          <BackButton />
-          <h1 style={textStyle}>PROJECTS</h1>
-        </div>
+      <PageHeader title="PROJECTS" margin="0 1vw 5vh" />
        
         
         <ListSubheader component="div">GLIMPSE OF PROJECTS I HAVE WORKED ON</ListSubheader>

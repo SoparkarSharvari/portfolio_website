@@ -1,0 +1,8 @@
+- [x] Add useEffect hook to Certificates.js to scroll to top on mount
+- [x] Center align the "CERTIFICATES" title in Certificates.js
+- [x] Position the home button (BackButton) on the leftmost side in Certificates.js
+- [x] Remove top margin from Certificates.js (change to 0 5vw 10vh)
+- [x] Center align the title in Experience.js
+- [x] Position the home button (BackButton) on the leftmost side in Experience.js
+- [x] Create reusable PageHeader component
+- [x] Add useEffect hook to MyProjects.js to scroll to top on mount
