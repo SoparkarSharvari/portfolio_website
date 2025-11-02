@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @keyframes shine {
   0% {
     transform: translateX(-100%) translateY(-100%) rotate(45deg);

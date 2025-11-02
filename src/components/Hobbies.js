@@ -3,6 +3,10 @@ import Footer from './Footer';
 import PageHeader from './PageHeader';
 
 function Hobbies() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const backgroundStyle = {
     background: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%)',
     minHeight: '100vh',

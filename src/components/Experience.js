@@ -27,6 +27,10 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function Experience() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const backgroundStyle ={
     background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
     height: '100%',

@@ -4,7 +4,6 @@ import Footer from './Footer';
 import Myskills from './Myskills';
 import AboutMe from './AboutMe';
 import '../style/Aboutme.css';
-import loading from '../loadingPng.gif';
 import { Box } from '@mui/material';
 
 
@@ -40,16 +39,24 @@ const LandingPage = () => {
     const [isScrollable, setIsScrollable] = useState(false);
 
     const landingStyle={
-        background: `url(${loading}) no-repeat center center fixed` ,
-        backgroundSize: '20%',
-        height: '100%',
-        display: showLanding ? 'block' : 'none',
+        height: '100vh',
+        display: showLanding ? 'flex' : 'none',
+        justifyContent: 'center',
+        alignItems: 'center',
+        background: 'linear-gradient(to bottom, #e91dc4ff 0%, #F8A91F 50%, #FDE3CF 100%)',
+    };
+
+    const loadingImageStyle = {
+        width: '200px',
+        height: '200px',
+        borderRadius: '50%',
+        animation: 'spin 2s linear infinite',
     };
   
     useEffect(() => {
         const timeout = setTimeout(() => {
           setShowLanding(false);
-        }, 1500); // 6 seconds
+        }, 2500); // 6 seconds
     
         return () => clearTimeout(timeout);
       }, []);
@@ -72,7 +79,9 @@ const LandingPage = () => {
     
   return (
     <>
-      <div style={landingStyle}></div>
+      <div style={landingStyle}>
+        <img src={require('../loadingPng.gif')} alt="Loading" style={loadingImageStyle} />
+      </div>
       <div style={alternativeStyle}>
         <Box>
           <div style={gradientStyle}>

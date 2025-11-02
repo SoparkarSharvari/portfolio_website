@@ -10,12 +10,22 @@ export default function BackButton() {
   };
 
   return (
-    <Button 
-      variant="outlined" 
-      style={{ paddingInline: '0px',marginTop: '10px' }} 
-      onClick={handleClick} // Add onClick handler
+    <Button
+      variant="contained"
+      sx={{
+        backgroundColor: '#F8A91F',
+        color: '#000',
+        border: '2px solid #000000ff',
+        paddingInline: '16px',
+        marginTop: '10px',
+        '&:hover': {
+          backgroundColor: '#EC6426',
+          borderColor: '#EC6426',
+        },
+      }}
+      onClick={handleClick}
     >
       HOME
     </Button>
-  );
+);
 }
