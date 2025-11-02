@@ -11,16 +11,15 @@ import { Box } from '@mui/material';
 const LandingPage = () => {
 
   const gradientStyle = {
-    background: 'linear-gradient(to bottom, rgba(40, 60, 99, 1), rgba(255, 255, 255, 0))',
-    // backgroundSize: '',
-    height: '100%',
+    background: 'transparent',
+    minHeight: '100vh',
     width: '100%',
     fontFamily: 'Protest Strike, sans-serif',
     color: 'white',
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'absolute',
-    
+    position: 'relative',
+    overflow: 'hidden',
   };
 
     const headerAnimation = useSpring({
@@ -38,11 +37,12 @@ const LandingPage = () => {
       // });
     
     const [showLanding, setShowLanding] = useState(true);
+    const [isScrollable, setIsScrollable] = useState(false);
 
     const landingStyle={
         background: `url(${loading}) no-repeat center center fixed` ,
         backgroundSize: '20%',
-        height: '500vh',
+        height: '100%',
         display: showLanding ? 'block' : 'none',
     };
   
@@ -58,10 +58,13 @@ const LandingPage = () => {
         display: showLanding ? 'none' : 'block',
         height:'100%',
         width: '100%',
+        background: 'linear-gradient(to bottom, #e91dc4ff 0%, #F8A91F 50%, #FDE3CF 100%)',
+        overflow: isScrollable ? 'auto' : 'hidden',
       };
       const [aboutMeRef, setAboutMeRef] = useState(null);
 
       const scrollToAboutMe = () => {
+        setIsScrollable(true);
         if (aboutMeRef) {
           aboutMeRef.scrollIntoView({ behavior: 'smooth' });
         }
@@ -70,11 +73,10 @@ const LandingPage = () => {
   return (
     <>
       <div style={landingStyle}></div>
-      
       <div style={alternativeStyle}>
-          <Box>
+        <Box>
           <div style={gradientStyle}>
-            <animated.div style={{...headerAnimation, fontFamily: 'Protest Strike, sans-serif', margin: '10vh 5vw',height: '100%'}}>
+            <animated.div style={{...headerAnimation, fontFamily: 'Protest Strike, sans-serif', margin: '10vh 5vw' , height:'100%'}}>
               <h1 style={{
                 fontSize: 'clamp(2rem, 8vw, 5rem)',
                 textAlign: 'center'
@@ -88,13 +90,13 @@ const LandingPage = () => {
                     <span>Who am I ??</span>
               </div>
             </animated.div>
-            <div ref={(ref) => setAboutMeRef(ref)}><AboutMe/></div>
-            <div><Myskills/></div>
-            <div ><Footer/></div>
           </div>
-          </Box>
+          <div ref={(ref) => setAboutMeRef(ref)} style={{ minHeight: '100vh' }}><AboutMe/> </div>
+          <div><Myskills/>
+          </div>
+          <Footer/>
+        </Box>
       </div>
-        
     </>
   )
 }

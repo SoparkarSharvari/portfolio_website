@@ -22,7 +22,7 @@ function Navbar({ isFixed }) {
         to="/myprojects"
         variant="contained"
         sx={{
-          backgroundColor: 'pink',
+          backgroundColor: '#d8008cff',
           color: 'white',
           borderRadius: '20px',
           padding: '8px 16px',
@@ -31,7 +31,7 @@ function Navbar({ isFixed }) {
           fontWeight: 'bold',
           boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
           '&:hover': {
-            backgroundColor: '#ff69b4',
+            backgroundColor: '#940160ff',
             boxShadow: '0 6px 12px rgba(0,0,0,0.2)',
             transform: 'translateY(-2px)',
           },
@@ -45,7 +45,7 @@ function Navbar({ isFixed }) {
         to="/certificates"
         variant="contained"
         sx={{
-          backgroundColor: 'pink',
+          backgroundColor: '#d8008cff',
           color: 'white',
           borderRadius: '20px',
           padding: '8px 16px',
@@ -54,7 +54,7 @@ function Navbar({ isFixed }) {
           fontWeight: 'bold',
           boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
           '&:hover': {
-            backgroundColor: '#ff69b4',
+            backgroundColor: '#940160ff',
             boxShadow: '0 6px 12px rgba(0,0,0,0.2)',
             transform: 'translateY(-2px)',
           },
@@ -68,7 +68,7 @@ function Navbar({ isFixed }) {
         to="/experience"
         variant="contained"
         sx={{
-          backgroundColor: 'pink',
+          backgroundColor: '#d8008cff',
           color: 'white',
           borderRadius: '20px',
           padding: '8px 16px',
@@ -77,7 +77,7 @@ function Navbar({ isFixed }) {
           fontWeight: 'bold',
           boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
           '&:hover': {
-            backgroundColor: '#ff69b4',
+            backgroundColor: '#940160ff',
             boxShadow: '0 6px 12px rgba(0,0,0,0.2)',
             transform: 'translateY(-2px)',
           },
@@ -87,10 +87,11 @@ function Navbar({ isFixed }) {
         Experience
       </Button>
       <Button
-        href="#utilities"
+        component={Link}
+        to="/Utilities "
         variant="contained"
         sx={{
-          backgroundColor: 'pink',
+          backgroundColor: '#d8008cff',
           color: 'white',
           borderRadius: '20px',
           padding: '8px 16px',
@@ -99,7 +100,7 @@ function Navbar({ isFixed }) {
           fontWeight: 'bold',
           boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
           '&:hover': {
-            backgroundColor: '#ff69b4',
+            backgroundColor: '#940160ff',
             boxShadow: '0 6px 12px rgba(0,0,0,0.2)',
             transform: 'translateY(-2px)',
           },
@@ -109,10 +110,11 @@ function Navbar({ isFixed }) {
         Utilities
       </Button>
       <Button
-        href="#hobbies"
+        component={Link}
+        to="/Hobbies"
         variant="contained"
         sx={{
-          backgroundColor: 'pink',
+          backgroundColor: '#d8008cff',
           color: 'white',
           borderRadius: '20px',
           padding: '8px 16px',
@@ -121,7 +123,7 @@ function Navbar({ isFixed }) {
           fontWeight: 'bold',
           boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
           '&:hover': {
-            backgroundColor: '#ff69b4',
+            backgroundColor: '#940160ff',
             boxShadow: '0 6px 12px rgba(0,0,0,0.2)',
             transform: 'translateY(-2px)',
           },

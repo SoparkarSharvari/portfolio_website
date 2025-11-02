@@ -1,3 +1,7 @@
 npx nodemon app.js
 export NODE_OPTIONS=--openssl-legacy-provider
 npm start
+
+git status
+git add .
+git commit -m "Enhanced portfolio website with custom cursor, improved layouts, and color schemes

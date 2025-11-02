@@ -28,7 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-    height: '100px',
+    height: '100%',
     width:'160px',
     borderRadius:'10px',
     transition: 'transform 0.2s', /* Fix the syntax here */
@@ -41,16 +41,14 @@ const Item = styled(Paper)(({ theme }) => ({
   
 function Myskills() {
     const outerdivStyle ={
-        height: 'max-content',
+        // height: 'max-content',
         background: 'white'}
   return (
-      <>
 
-<div style={outerdivStyle}>
-            <div>
+<div>
                 <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'black', fontSize: 'clamp(2rem, 5vw, 3rem)', alignSelf: 'center' }}>
                     My Skills</h2>
-                <h2 style={{color:'rgba(40, 60, 99, 1)',margin:'23px', textAlign: 'center'}}>Languages</h2>
+                <h2 style={{color:'rgba(40, 60, 99, 1)', textAlign: 'center'}}>Languages</h2>
         <Box sx={{ flexGrow: 1 ,paddingX:{xs: 2, sm: 4, md: 6}, paddingBottom:'30px'}}>
 
         <Grid container spacing={2} justifyContent="center">
@@ -124,10 +122,7 @@ function Myskills() {
             </Grid>
         </Grid>
         </Box>
-       
-        </div></div>
-      </>
-    
+        </div> 
   )
 }
 
